@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta2" class="ui-btn-active">Etiqueta 2</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Etiqueta 2: Riesgo de síndrome de estrès
+				del traslado</p>
+				<p class="bblue" id="definicion">Definición: Riesgo de sufrir un trastorno fisiológico y/o psicológico después									del traslado de un entorno a otro.</p>
+				<p class="bgray" id="dominio">Dominio 9:  Afrontamiento/Tolerancia al estrés</p>
+				<p class="borange" id="clase">Clase 1:  Respuestas postraumáticas </p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="no se han encontrado ">
+						<label for="carDef1" name="lCarDef">no se han encontrado</label>
+
+
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores relacionales</h3>
+						
+						<input type="radio" name="facRel" id="facRel1" value ="Deterioro del estado de salud.">
+						<label for="facRel1" name="lFacRel" >Deterioro del estado de salud.</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Falta de un sistema de apoyo
+						 adecuado.">
+						<label for="facRel2" name="lFacRel" >Falta de un sistema de apoyo
+					     adecuado.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Falta de asesoría previa al traslado.">
+						<label for="facRel3" name="lFacRel" >Falta de asesoría previa al traslado.</label>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Pérdidas.">
+						<label for="facRel4" name="lFacRel" >Pérdidas.</label>
+
+						<input type="radio" name="facRel" id="facRel5" value ="Cambio ambiental de moderado a
+						importante.">
+						<label for="facRel5" name="lFacRel" >Cambio ambiental de moderado a
+						importante.</label>
+
+						<input type="radio" name="facRel" id="facRel6" value ="Competencia mental moderada.">
+						<label for="facRel6" name="lFacRel" >Competencia mental moderada.</label>
+
+						<input type="radio" name="facRel" id="facRel7" value ="Trasladarse de im entorno a otro.">
+						<label for="facRel7" name="lFacRel" >Trasladarse de im entorno a otro.</label>
+
+						<input type="radio" name="facRel" id="facRel8" value ="Afrontamiento pasivo.">
+						<label for="facRel8" name="lFacRel" >Afrontamiento pasivo.</label>
+
+						<input type="radio" name="facRel" id="facRel9" value ="Expresa impotencia.">
+						<label for="facRel9" name="lFacRel" >Expresa impotencia.</label>
+
+						<input type="radio" name="facRel" id="facRel10" value ="Imprevisibilidad de la experiencia." checked="cheked">
+						<label for="facRel10" name="lFacRel" >Imprevisibilidad de la experiencia.</label>
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>
