@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">			
+			<title>NANOCNIC</title>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery-2.1.3.min.js"></script>
+			<link rel="stylesheet" href="../../jquery.mobile-1.3.2/jquery.mobile.theme-1.3.2.min.css"/>
+			<script type="text/javascript" src="../../jquery.mobile-1.3.2/jquery.mobile-1.3.2.js"></script>
+			<link rel="stylesheet" href="../../thema.css"/>
+			<script type="text/javascript" src="../js/resul.js"></script>
+	</head>
+
+	<body>
+		<section id="index" data-role="page" data-title="NANOCNIC">
+			<header data-role="header"  data-theme="e">
+				<h1>VersionBeta NANOCNIC</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="javascript:history.go(-2)">Libros</a></li>
+						<li><a href="javascript:history.go(-1)">NANDA</a></li>
+						<li><a href="#etiqueta32" class="ui-btn-active">Etiqueta 32</a></li>
+					</ul>
+				</div>
+			</header>
+			<article data-role="content">
+				<p class="bgreen" id="etiqueta">Etiqueta 32: Disminución de la capacidad adaptativa intracraneal</p>
+				<p class="bblue" id="definicion">Definición: compromiso de los mecanismos dinámicos de líquido intracraneal
+				que normalmente compensan el incremento del volumen intracraneal, resultando
+				en repetidos aumentos desproporcionados de la presión intracraneal (PIC), en
+				respuesta a una variedad de estímulos nocivos o no.</p>
+				<p class="bgray" id="dominio">Dominio 9:  Afrontamiento/Tolerancia al estrés </p>
+				<p class="borange" id="clase">Clase 3: Estrés neurocomportamental</p>
+
+				<form  id="form1" name="form1" method="post" action="#">
+					<fieldset data-role="controlgroup">
+						<h3 class="bred" id="caractRiesgo" >Características Definitorias</h3>
+
+						<input type="checkbox" name="carDef" id="carDef1" value ="Línea base de la PIC >10 mmHg.">
+						<label for="carDef1" name="lCarDef">Línea base de la PIC >10 mmHg.</label>
+
+						<input type="checkbox" name="carDef" id="carDef2" value ="Aumentos desproporcionados de la
+						PIC después de un estímulo.">
+						<label for="carDef2" name="lCarDef">Aumentos desproporcionados de la
+						PIC después de un estímulo.</label>
+
+						<input type="checkbox" name="carDef" id="carDef3" value ="Curva P2 de la PIC elevada.">
+						<label for="carDef3" name="lCarDef">Curva P2 de la PIC elevada.</label>
+
+						<input type="checkbox" name="carDef" id="carDef4" value ="Repetidos aumentos de >10 mmHg
+						durante más de 5 minutos después de
+						diferentes estímulos externos.">
+						<label for="carDef4" name="lCarDef">Repetidos aumentos de >10 mmHg
+						durante más de 5 minutos después de
+						diferentes estímulos externos.</label>
+
+						<input type="checkbox" name="carDef" id="carDef5" value ="Variación de la respuesta a la prueba
+						volumen/presión (volumen:
+						proporción de la presión 2, índice
+						volumen/presión <10).">
+						<label for="carDef5" name="lCarDef">Variación de la respuesta a la prueba
+						volumen/presión (volumen:
+						proporción de la presión 2, índice
+						volumen/presión <10).</label>
+
+						<input type="checkbox" name="carDef" id="carDef6" value ="Ensanchamiento de la curva de la PIC.">
+						<label for="carDef6" name="lCarDef">Ensanchamiento de la curva de la PIC.</label>
+					</fieldset>
+				
+					<fieldset data-role="controlgroup">
+						<h3 class="bred">Factores relacionales</h3>
+						<input type="radio" name="facRel" id="facRel1" value ="Lesiones cerebrales." checked="cheked">
+						<label for="facRel1" name="lFacRel" >Lesiones cerebrales.</label>
+
+						<input type="radio" name="facRel" id="facRel2" value ="Disminución de la perfusión cerebral
+						^ 0 -6 0 mmHg.">
+						<label for="facRel2" name="lFacRel" >Disminución de la perfusión cerebral
+						^ 0 -6 0 mmHg.</label>
+
+						<input type="radio" name="facRel" id="facRel3" value ="Aumento sostenido de la PIC
+						de 10-15 mmHg.">
+						<label for="facRel3" name="lFacRel" >Aumento sostenido de la PIC
+						de 10-15 mmHg.</label>
+
+						<input type="radio" name="facRel" id="facRel4" value ="Hipotensión sistémica con
+						hipertensión intracraneal.">
+						<label for="facRel4" name="lFacRel" >Hipotensión sistémica con
+						hipertensión intracraneal.</label>
+
+						
+					</fieldset>
+
+					<input value="Diagnosticar" data-icon="check" data-iconpos="right" data-mini="true" data-theme="e" type="button" onClick="diagnostico()">
+				</form>
+
+			</article>
+			<footer data-role="footer" data-mini="true" data-theme="b">
+				<h1>HYDRA-PDM/ENFERMERIA</h1>
+			</footer>
+		</section>
+
+		<section id="ejemplo" data-role="page" data-title="resultado ejemplo">
+            <header data-role="header"  data-theme="e">
+                <h1>VersionBeta NANOCNIC</h1>
+            </header>
+            <article data-role="content">
+                <div id="resultados" name="resultados" >
+
+                </div>
+            </article>
+            <footer data-role="footer" data-mini="true" data-theme="b">
+                <h1>HYDRA-PDM/ENFERMERIA</h1>
+            </footer>
+        </section>
+	</body>
+</html>
